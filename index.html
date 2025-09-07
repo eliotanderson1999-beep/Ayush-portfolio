@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ayush - Artist Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav id="navbar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#artwork">Artwork</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="carousel-container">
+        <div
+          class="carousel-slide active"
+          data-bg="https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=1920&h=1080&fit=crop"
+        >
+          <div class="slide-overlay"></div>
+          <div class="slide-content">
+            <h1>
+              Welcome to Ayush's Art World - Where Creativity Meets Imagination
+            </h1>
+          </div>
+        </div>
+        <div
+          class="carousel-slide"
+          data-bg="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1920&h=1080&fit=crop"
+        >
+          <div class="slide-overlay"></div>
+          <div class="slide-content">
+            <h1>Custom Portraits That Capture Your Soul and Story</h1>
+          </div>
+        </div>
+        <div
+          class="carousel-slide"
+          data-bg="https://images.unsplash.com/photo-1547891654-e66ed7ebb968?w=1920&h=1080&fit=crop"
+        >
+          <div class="slide-overlay"></div>
+          <div class="slide-content">
+            <h1>Abstract Art That Speaks to Your Heart</h1>
+          </div>
+        </div>
+        <div
+          class="carousel-slide"
+          data-bg="https://images.unsplash.com/photo-1578321272176-b7bbc0679853?w=1920&h=1080&fit=crop"
+        >
+          <div class="slide-overlay"></div>
+          <div class="slide-content">
+            <h1>Watercolor Magic - Bringing Life to Every Brushstroke</h1>
+          </div>
+        </div>
+        <div
+          class="carousel-slide"
+          data-bg="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=1920&h=1080&fit=crop"
+        >
+          <div class="slide-overlay"></div>
+          <div class="slide-content">
+            <h1>Professional Commission Work Tailored Just for You</h1>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel Controls -->
+      <div class="carousel-controls">
+        <button
+          class="carousel-btn prev-btn"
+          id="prevBtn"
+          title="Previous Slide"
+        >
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="carousel-btn next-btn" id="nextBtn" title="Next Slide">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+
+      <!-- Slide Indicators -->
+      <div class="slide-indicators">
+        <button class="indicator active" data-slide="0"></button>
+        <button class="indicator" data-slide="1"></button>
+        <button class="indicator" data-slide="2"></button>
+        <button class="indicator" data-slide="3"></button>
+        <button class="indicator" data-slide="4"></button>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2>About Ayush</h2>
+            <p>
+              Welcome to my artistic journey! I'm Ayush, a passionate artist
+              dedicated to bringing your visions to life through the power of
+              art. With years of experience in various mediums, I specialize in
+              creating personalized artworks that tell your unique story.
+            </p>
+            <p>
+              From vibrant watercolors to striking black and white portraits,
+              from abstract expressions to detailed color portraits, I work
+              closely with each client to ensure every piece captures the
+              essence of what you're looking for.
+            </p>
+            <p>
+              Art is not just my profession – it's my passion. Every
+              brushstroke, every color choice, every detail is crafted with love
+              and dedication to create something truly special for you.
+            </p>
+          </div>
+          <div class="about-image">
+            <img
+              src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&h=800&fit=crop"
+              alt="Featured Artwork"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Artwork Section -->
+    <section id="artwork" class="artwork-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>My Artwork</h2>
+          <p>
+            Explore my diverse collection of artistic creations, each piece
+            crafted with passion and precision.
+          </p>
+        </div>
+
+        <!-- Featured Artwork -->
+        <div class="featured-artwork">
+          <img
+            src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop"
+            alt="Featured Artwork"
+          />
+          <p class="featured-quote">
+            "Art enables us to find ourselves and lose ourselves at the same
+            time. Each piece tells a story, captures a moment, and preserves an
+            emotion forever."
+          </p>
+        </div>
+
+        <!-- Category Buttons -->
+        <div class="category-buttons">
+          <button class="category-btn" data-category="abstract">
+            Abstract Acrylic
+          </button>
+          <button class="category-btn" data-category="bw-portrait">
+            Black and White Portrait
+          </button>
+          <button class="category-btn" data-category="color-portrait">
+            Colour Portrait
+          </button>
+          <button class="category-btn" data-category="watercolor">
+            Water Colour
+          </button>
+        </div>
+      </div>
+
+      <!-- Gallery Modal -->
+      <div id="galleryModal" class="gallery-modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 id="modalTitle">Gallery</h3>
+            <button class="close-btn" id="closeModal">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+          <div class="gallery-grid" id="galleryGrid">
+            <!-- Images will be populated by JavaScript -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Image Viewer Modal -->
+      <div id="imageModal" class="image-modal">
+        <button class="close-btn" id="closeImageModal">
+          <i class="fas fa-times"></i>
+        </button>
+        <img id="modalImage" src="" alt="Full size image" />
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Pricing</h2>
+          <p>
+            Affordable art that brings your vision to life. Each piece is
+            crafted with care and attention to detail.
+          </p>
+        </div>
+
+        <div class="pricing-grid">
+          <div class="pricing-card">
+            <h3>Black & White Portrait</h3>
+            <div class="price">₹2,500</div>
+            <ul class="features">
+              <li>
+                <i class="fas fa-check"></i> High-quality pencil/charcoal work
+              </li>
+              <li><i class="fas fa-check"></i> A4 size</li>
+              <li><i class="fas fa-check"></i> Digital copy included</li>
+              <li><i class="fas fa-check"></i> 7-10 days delivery</li>
+            </ul>
+          </div>
+
+          <div class="pricing-card">
+            <h3>Color Portrait</h3>
+            <div class="price">₹4,500</div>
+            <ul class="features">
+              <li><i class="fas fa-check"></i> Vibrant color artwork</li>
+              <li><i class="fas fa-check"></i> A4 size</li>
+              <li><i class="fas fa-check"></i> Digital copy included</li>
+              <li><i class="fas fa-check"></i> 10-14 days delivery</li>
+            </ul>
+          </div>
+
+          <div class="pricing-card">
+            <h3>Abstract Acrylic</h3>
+            <div class="price">₹6,000</div>
+            <ul class="features">
+              <li><i class="fas fa-check"></i> Custom abstract piece</li>
+              <li><i class="fas fa-check"></i> Canvas (12x16 inches)</li>
+              <li><i class="fas fa-check"></i> Unique composition</li>
+              <li><i class="fas fa-check"></i> 14-21 days delivery</li>
+            </ul>
+          </div>
+
+          <div class="pricing-card">
+            <h3>Watercolor Art</h3>
+            <div class="price">₹3,500</div>
+            <ul class="features">
+              <li>
+                <i class="fas fa-check"></i> Delicate watercolor technique
+              </li>
+              <li><i class="fas fa-check"></i> A3 size</li>
+              <li><i class="fas fa-check"></i> Digital copy included</li>
+              <li><i class="fas fa-check"></i> 7-12 days delivery</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Contact & Commission</h2>
+          <p>
+            Ready to bring your vision to life? Get in touch and let's create
+            something amazing together.
+          </p>
+        </div>
+
+        <div class="contact-content">
+          <!-- Social Media Links -->
+          <div class="contact-info">
+            <h3>Connect With Me</h3>
+            <div class="social-links">
+              <a
+                href="https://www.instagram.com/ayushh.arts?igsh=MzJwMmV2ajh5a2Q5"
+                class="social-link"
+              >
+                <i class="fab fa-instagram"></i>
+                <span>@ayushh.arts</span>
+              </a>
+              <a href="tel:+916207806187" class="social-link">
+                <i class="fas fa-phone"></i>
+                <span>+91 6207 806 187</span>
+              </a>
+              <a href="mailto:ayusharts4@gmail.com" class="social-link">
+                <i class="fas fa-envelope"></i>
+                <span>ayusharts4@gmail.com</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Commission Form -->
+          <div class="commission-form">
+            <h3>Commission Request</h3>
+            <form id="commissionForm">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+
+              <div class="form-group">
+                <label for="mobile">Mobile Number *</label>
+                <input type="tel" id="mobile" name="mobile" required />
+              </div>
+
+              <div class="form-group">
+                <label for="photo">Reference Photo (optional)</label>
+                <input type="file" id="photo" name="photo" accept="image/*" />
+              </div>
+
+              <div class="form-group">
+                <label for="message">Commission Details *</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  required
+                  placeholder="Please describe your commission requirements, preferred style, size, timeline, etc."
+                ></textarea>
+              </div>
+
+              <button type="submit" class="submit-btn">
+                Send Commission Request
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <h3>Ayush - Artist</h3>
+          <p>Creating beautiful art that tells your story</p>
+          <div class="footer-bottom">
+            <p>&copy; 2025 Ayush Artist. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
